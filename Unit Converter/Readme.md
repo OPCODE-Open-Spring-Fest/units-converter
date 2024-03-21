@@ -1,6 +1,3 @@
-# Project Tour
-
-
 ## Description:
 This is a simple project for the Easy category.
 The Unit Converter project is an open-source web development initiative aimed at providing users with a convenient tool for converting between different units of measurement. The project covers various categories such as currency, weight, volume, length, and temperature, allowing users to easily convert values from one unit to another.
@@ -23,7 +20,6 @@ The Unit Converter project is an open-source web development initiative aimed at
 
 ## Tech Stack Required:
 HTML5,CSS3,Javascript
-
 
 
 ## How to Contribute:
