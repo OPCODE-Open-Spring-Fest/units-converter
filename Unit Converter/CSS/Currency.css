@@ -1,0 +1,39 @@
+body {
+    font-family:serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background: linear-gradient(90deg, hsla(270, 94%, 25%, 1) 0%, hsla(158, 94%, 49%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#439CFB", endColorstr="#F187FB", GradientType=1 );
+    font-weight: bold;
+    font-size: larger;
+}
+p{
+    text-align: center;
+}
+.container-fluid {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.form-select {
+    width: 45%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.form-control {
+    width: 45%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
