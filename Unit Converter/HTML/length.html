@@ -4,46 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Length</title>
+  <link rel="stylesheet" href="../CSS/length.css">
 </head>
 <body>
-  
-    
-    <p id="desc">This is a simple unit converter.</p>
-        
-        <p>You can also convert from one unit to another unit.</p>
-
-<div  class="container-fluid ">
-    <div class="row justify-content-evenly">
-<select id="selectfr" name="slfrom" class="form-select slfr" aria-label="Default select example">
-    <option value="0">Select unit you are converting from</option>
-    <option value="1">Kilometer(km)</option>
-    <option value="2">Meter (m)</option>
-    <option value="3">Centimeter (cm)</option>
-    <option value="4">Millimeter (mm)</option>
-  </select>
-  <select id="selectto" name="slto" class="form-select slto"  aria-label="Default select example">
-    <option value="0">Select unit you are converting to</option>
-    <option value="1">Kilometer(km)</option>
-    <option value="2">Meter (m)</option>
-    <option value="3">Centimeter (cm)</option>
-    <option value="4">Millimeter (mm)</option>
-  </div>
-</div> 
-  </select>
-  <form>
-  <div class="container-fluid">
-    <div class="row justify-content-evenly">
-      <form>
-      <input id="select1fr" name="etfrom" class="form-control" type="number" placeholder="Enter value to be changed" value="" aria-label="default input example">
-      <input id="select1to" name="etto" class="form-control" type="number" placeholder="Result" value="" aria-label="default input example">
-        
-    </form>              
+  <div class="bg">
+    <div class="containment">
+      <p id="desc">This is a simple unit converter.</p>
+      <p id="desc0">You can also convert from one unit to another unit.</p>
+      <div class="box">
+        <div class="container-fluid">
+          <div id="optionfr">
+            <select id="selectfr" name="slfrom" class="form-select slfr" aria-label="Default select example">
+              <option value="0"> From</option>
+              <option value="1">Kilometer(km)</option>
+              <option value="2">Meter (m)</option>
+              <option value="3">Centimeter (cm)</option>
+              <option value="4">Millimeter (mm)</option>
+            </select>
+            <img id="conversion" src="images/LengthConversion.png">
+            <select id="selectto" name="slto" class="form-select slto" aria-label="Default select example">
+              <option value="0">To</option>
+              <option value="1">Kilometer(km)</option>
+              <option value="2">Meter (m)</option>
+              <option value="3">Centimeter (cm)</option>
+              <option value="4">Millimeter (mm)</option> 
+            </select>
+          </div>
+        </div>
+        <form>
+          <div class="container-fluid" id="value">
+            <form>
+              <input id="select1fr" name="etfrom" class="form-control" type="number" placeholder="Enter value to be changed" value="" aria-label="default input example">
+              <input id="select1to" name="etto" class="form-control" type="number" placeholder="Result" value="" aria-label="default input example">
+            </form>              
+          </div>
+        </form>
+      </div>
     </div>
-</div>
-
-  
-</form>
-
-  
+  </div>
 </body>
 </html>
