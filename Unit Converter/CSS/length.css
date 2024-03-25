@@ -1,5 +1,4 @@
-body {
-    margin: 0;
+body{
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
 }
@@ -14,7 +13,9 @@ body {
     background-size: cover;
     background-position: center; 
 }
-
+.len{
+    background-color: grey;
+}
 .containment {
     display: flex;
     flex-direction: column;
