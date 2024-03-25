@@ -1,27 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
 
 .navbar {
-    color: white;
+  color: black;
   overflow: hidden;
-  background-color: #333;
+  background-color: #E5DBCC;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-between;
+  height: 64px;
+  font-family: "Poppins";
 }
 
-.unit{
-    display: flex;
-    align-items: center;
+.unit {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  margin-left: 10vw;
+  font-family: "Style Script";
 }
+
+.navbar {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
 .navbar a {
   float: left;
   display: block;
-  color: white;
+  color: black;
   text-align: center;
-  padding: 14px 20px;
+  padding: 20px 15px;
   text-decoration: none;
 }
 
-
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: gray;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.fa-moon {
+  margin-right: 3vw;
+  cursor: pointer;
+}
+
+.main-content {
+  height: 65vh;
+  background-color: #867285;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#online {
+  width: 30vw;
+  text-align: center;
+  color: #F4F2F3;
+  font-family: "Bad Script";
+  line-height: 1.1;
+}
+
+.msg {
+  font-family: "Bad Script";
+  line-height: 1.1;
+  color: #F4F2F3;
+}
+
+/* .info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.info i {
+  color: #5f575e;
+} */
+
+
+.container {
+  height: 40vh;
+  width: 80vw;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #5f575e;
+  border: none;
+}
+
+.container .inside {
+  background-color: #F4F2F3;
+  height: 37vh;
+  width: 15vw;
+  border-radius: 5px;
+  position: relative;
+}
+
+#length {
+  background-image: url(android-chrome-512x512.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.layer {
+  position: absolute;
+  inset: 0;
+  background-color: gray;
+  opacity: 0.7;
+}
+
+.converterInfo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
   color: black;
+  font-weight: 900;
+  z-index: 5;
+}
+
+.converterInfo p, h3 {
+  text-align: center;
+}
+
+.converterInfo h3 a {
+  text-decoration: none;
+  border-bottom: 3px solid #867285;
+}
+
+.btn {
+  /* position: fixed;
+  bottom: 35vh;
+  left: auto;
+  right: auto; */
+  cursor: pointer;
+}
+
+#weight {
+  background-image: url(wietght.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#volume {
+  background-image: url(volume.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#currency {
+  background-image: url(curr.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#temp {
+  background-image: url(temp.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.preFooter {
+  height: 64px;
+  background-color: #F4F2F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  color: rgb(168, 166, 166);
+  font-weight: 700;
+}
+
+#javaScript {
+  font-family: "Style Script";
+  font-size: 1.3rem;
+}
+
+footer {
+  background-color: #ffffff;
+  height: calc(35vh - 128px);
+  color: gray;
+  position: relative;
+}
+
+footer h1 {
+  text-align: center;
+}
+
+footer p {
+  position: absolute;
+  font-size: 1.3rem;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
 }

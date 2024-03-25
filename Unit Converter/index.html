@@ -1,27 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-    
-<div class="navbar">
-    <span class="unit">Unit Convertor</span>
+
+  <div class="navbar">
+    <span class="unit">unit-convertor</span>
     <div>
-        <a href="">Length</a>
-        <a href="">Weight</a>
-        <a href="">Volume</a>
-        <a href="">Currency</a>
-        <a href="">Temperature</a>
+      <a href="index.html" class="link">Home</a>
+      <a href="HTML/length.html" class="link">Length</a>
+      <a href="HTML/weight.html" class="link">Weight</a>
+      <a href="HTML/volume.html" class="link">Volume</a>
+      <a href="HTML/currency.html" class="link">Currency</a>
+      <a href="HTML/temperature.html" class="link">Temperature</a>
     </div>
-   
+    <span><i class="fa-solid fa-moon fa-2x"></i></span>
   </div>
-  <h2>
-    This is the Home Page
-  </h2>
+  <div class="main-content">
+    <div id="online">
+      <h1>Online conversion of physical units</h1>
+    </div>
+
+    <div class="msg">
+      <h2>Hi, What do you want to convert !</h2>
+    </div>
+
+    <div class="info">
+      <!-- <i class="fa-solid fa-3x fa-circle-chevron-left"></i> -->
+      <div class="container">
+        <div id="length" class="inside">
+          <div class="layer"></div>
+          <div class="converterInfo">
+            <h3><a href="HTML/length.html">Length Converter</a></h3>
+            <p>A length converter converts measurements from one unit of length to another. It allows you to easily convert measurements such as inches to centimeters, feet to meters, or miles to kilometers, among others. It simplifies calculations and helps in comparing measurements across different units.</p>
+            <!-- <button class="btn">Read more</button> -->
+          </div>
+        </div>
+
+        <div id="weight" class="inside">
+          <div class="layer"></div>
+          <div class="converterInfo">
+            <h3><a href="HTML/weight.html">Weight Converter</a></h3>
+            <p>A weight converter is a tool used to convert measurements of weight or mass from one unit to another. It simplifies tasks such as converting kilograms to pounds, grams to ounces, or metric tons to short tons.</p>
+            <!-- <button class="btn">Read more</button> -->
+          </div>
+        </div>
+
+        <div id="volume" class="inside">
+          <div class="layer"></div>
+          <div class="converterInfo">
+            <h3><a href="HTML/volume.html">Volume Converter</a></h3>
+            <p>A litre converter is a tool designed to convert volume measurements between litres and other units such as millilitres, cubic meters, and cubic centimeters. It simplifies tasks by allowing users to input a volume in litres and instantly obtain the equivalent measurement in their desired unit, or vice versa.</p>
+            <!-- <button class="btn">Read more</button> -->
+          </div>
+        </div>
+
+        <div id="currency" class="inside">
+          <div class="layer"></div>
+          <div class="converterInfo">
+            <h3><a href="HTML/currency.html">Currency Converter</a></h3>
+            <p>
+              A currency converter is a tool or application used to convert the value of one currency into another currency based on the current exchange rates. It allows users to quickly assess the equivalent value of a certain amount of money in different currencies.</p>
+            <!-- <button class="btn">Read more</button> -->
+          </div>
+        </div>
+
+        <div id="temp" class="inside">
+          <div class="layer"></div>
+          <div class="converterInfo">
+            <h3><a href="HTML/temperature.html">Temperature Converter</a></h3>
+            <p>
+              A temperature converter is a tool used to convert temperatures between different units of measurement, such as Celsius, Fahrenheit, and Kelvin. It allows users to easily convert temperatures from one scale to another, facilitating tasks like converting Celsius to Fahrenheit or vice versa.</p>
+            <!-- <button class="btn">Read more</button> -->
+          </div>
+        </div>
+      </div>
+      <!-- <i class="fa-solid fa-3x fa-circle-chevron-right"></i> -->
+    </div>
+  </div>
+
+  <div class="preFooter">
+    <p>OP Code</p>
+    <p>HTML</p>
+    <p id="javaScript">JavaScript</p>
+    <p>CSS</p>
+  </div>
+
+  <footer>
+    <h1>Do so much more</h1>
+    <p>Copyright
+      IIIT © Bhagalpur 2024</p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/df53f4a996.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
