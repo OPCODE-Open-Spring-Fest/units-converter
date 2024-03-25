@@ -1,51 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volume</title>
+  <link rel="stylesheet" href="../CSS/volume.css">
 </head>
+
 <body>
-  
-  
-    <p id="desc">This is a simple unit converter.</p>
-        
-        <p>You can also convert from one unit to another unit.</p>
-
-
-<div  class="container-fluid ">
-    <div class="row justify-content-evenly">
-<select id="selectfr" name="slfrom" class="form-select slfr" aria-label="Default select example">
-    <option value="0">Select unit you are converting from</option>
-    <option value="1">Litre (L)</option>
-    <option value="2">Cubic Meter (&#13221;)</option>
-    <option value="3">Cubic centimeter (&#13220;)</option>
-    <option value="4">Milliliter (ml)</option>
-  </select>
-  <select id="selectto" name="slto" class="form-select slto" aria-label="Default select example">
-    <option value="0">Select unit you are converting to</option>
-    <option value="1">Litre (L)</option>
-    <option value="2">Cubic Meter (&#13221;)</option>
-    <option value="3">Cubic centimeter (&#13220;)</option>
-    <option value="4">Milliliter (ml)</option>
-  </div>
-</div> 
-  </select>
-  <form>
-  <div class="container-fluid">
-    <div class="row justify-content-evenly">
-      <form>
-      <input id="select1fr" name="etfrom" class="form-control" type="number" placeholder="Enter value to be changed" value="" aria-label="default input example">
-      <input id="select1to" name="etto" class="form-control" type="number" placeholder="Result" value="" aria-label="default input example">
-        
-    </form>              
+  <div class="navbar">
+    <span class="unit"><i>Unit-Convertor</i></span>
+    <div class="items">
+      <a href="index.html">Home</a>
+      <a href="length.html">Length</a>
+      <a href="weight.html">Weight</a>
+      <a href="volume.html">Volume</a>
+      <a href="currency.html">Currency</a>
+      <a href="temperature.html">Temperature</a>
     </div>
-</div>
 
-  
-</form>
+  </div>
+  <p id="desc">Unit-Converter</p>
+  <p><i>Switch between units seamlessly with ease.</i></p>
+
+  <div class="outerbox">
+    <span>
+      <img class="cartoon" src="../cartoon.png"
+        alt="cartoon image">
+    </span>
+
+    <div class="innerbox">
+      <h1>Volume</h1>
+      <div class="container-fluid ">
+        <div class="row justify-content-evenly">
+          <select id="selectfr" name="slfrom" class="form-select slfr" aria-label="Default select example">
+            <option value="0">Select unit you are converting from</option>
+            <option value="1">Litre (L)</option>
+            <option value="2">Cubic Meter (&#13221;)</option>
+            <option value="3">Cubic centimeter (&#13220;)</option>
+            <option value="4">Milliliter (ml)</option>
+          </select>
+          <select id="selectto" name="slto" class="form-select slto" aria-label="Default select example">
+            <option value="0">Select unit you are converting to</option>
+            <option value="1">Litre (L)</option>
+            <option value="2">Cubic Meter (&#13221;)</option>
+            <option value="3">Cubic centimeter (&#13220;)</option>
+            <option value="4">Milliliter (ml)</option>
+
+          </select>
+        </div>
+      </div>
+      <form>
+        <div class="container-fluid">
+          <div class="row justify-content-evenly">
+            <div>
+              <form>
+                <input id="select1fr" name="etfrom" class="form-control" type="number"
+                  placeholder="Enter value to be changed" value="" aria-label="default input example">
+                <input id="select1to" name="etto" class="form-control" type="number" placeholder="Result" value=""
+                  aria-label="default input example">
+              </form>
+            </div>
+
+            <!-- added button -->
+            <button class="calculate">Calculate</button>
+          </div>
+      </form>
 
 
-  
+    </div>
+
+  </div>
+
+  </div>
+  <!-- Footer Section -->
+  <div class="mainfooter">
+    <img class="convert"
+      src="https://mathspace-production-media.mathspace.co/media/upload/2020/Perimeter-area-volume/capacity_volume_conversion.svg"
+      alt="conversion image">
+    <p class="footer">&copy; 2024 IIIT BHAGALPUR. All rights reserved.</p>
+  </div>
+  <!-- End of Footer Section -->
 </body>
+
 </html>
