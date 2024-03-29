@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+::selection
+{
+   background-color: #ffdb58;
+   color: #fff;
+}
+ #desc{
+    text-align: center;
+    margin: 2rem;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 500px;
+}
+p{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size:2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.container-fluid{
+    display:flex;
+    width: 100vw;
+    height: 30rem;
+    /* overflow-y: hidden; */
+}
+.wt-image{
+    margin-left: 5rem;
+    height: 70%;
+    width: 400px;
+    margin-right: 2.5rem;
+   
+    
+}
+.row {
+  
+   width: 100%;
+   overflow-y: hidden;
+  
+}
+select{
+position: relative;
+top: 4.5rem;
+left: 8%;
+margin-right: 2.5rem;
+padding: 1.7rem 2.5rem;
+color: rgb(128,128,128);
+border: .4rem solid #ffdb58;
+outline: none;
+font-size: 1.5rem;
+border-radius: 1rem;
+}
+select:focus{
+    border-color: #FFFF2E;
+    box-shadow: 2px 4px;
+}
+.form-control{
+ position: relative;
+ 
+top: 120px;
+left: 2.6rem;
+border: .3rem solid #ffdb58;
+padding: 1.5rem 2.5rem;
+font-size: 1.5rem;
+border-radius: 1rem;
+outline: none;
+text-align: center;
+
+}
+#select1fr{
+    margin-top: 2rem;
+    margin-right: 4rem;
+    margin-left: 3rem;
+   
+}
+#select1to{
+    margin-left: 3rem;
+}
+.form-control:focus{
+    border-color: #FFFF2E;
+    box-shadow: 2px 4px;
+}
+@media(max-width:1420px)
+{
+    .container-fluid{
+        width: 100%;
+        column-gap: 1.9rem;
+        height: 50rem;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.1rem;
+        width: 100%;
+        /* overflow-y: hidden; */
+        
+    }
+    select{
+        margin-right: 7rem;
+       padding: 1.5rem 1.5rem;
+        font-size: 1.4rem;
+       border-radius: 1rem
+    }
+    .wt-image{
+        margin-left: 1.5rem;
+        height: 50%;
+        width: 490px;
+        margin-right: 1rem;
+        
+    }
+    .form-control{
+
+        right: 15rem ;
+        left: 1rem;
+        padding: 1.5rem 1.5rem;
+        font-size: 1.4rem;
+       border-radius: 1rem;
+       margin-left:2rem ; 
+       overflow-y: hidden;
+       margin-right: 4rem;
+    }
+   
+}
+@media(max-width:1024px)
+{
+    #desc{
+        font-size: 2.5rem;
+        margin: 1.2rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }   
+
+}
