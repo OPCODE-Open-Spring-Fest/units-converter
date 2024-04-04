@@ -30,6 +30,9 @@ body{
     width: 80%;
     margin: 20px; 
 }
+.cur{
+    background-color: grey;
+}
 
 .box {
     background-color: #ffffff;

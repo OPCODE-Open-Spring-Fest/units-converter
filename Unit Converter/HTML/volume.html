@@ -6,70 +6,70 @@
   <title>Volume</title>
 
   <link rel="stylesheet" href="../CSS/volume.css">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../CSS/navbar.css">
 </head>
 <body>
   <nav>
     <ul class="sidebar">
-      <li onclick=hideSidebar()><a href="../HTML/volume.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li onclick=hideSidebar()><a href="./volume.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
       <li><a href="./length.html">Length</a></li>
       <li><a href="./weight.html">Weight</a></li>
-      <li><a class="vol" href="./volume.html">Volume</a></li>
+      <li><a class="cur" href="./volume.html">Volume</a></li>
       <li><a href="./currency.html">Currency</a></li>
       <li><a href="./temperature.html">Temperature</a></li>
     </ul>
-    <ul>
-      <li><a href="../index.html">Unit Convertor</a></li>
+    <ul class="navbar">
+      <li><a href="../index.html" style="color: black; font-size: 35px; font-weight: 800;">Unit Convertor</a></li>
       <li class="hideOnMobile"><a href="./length.html">Length</a></li>
       <li class="hideOnMobile"><a href="./weight.html">Weight</a></li>
-      <li class="hideOnMobile vol"><a href="./volume.html">Volume</a></li>
+      <li class="hideOnMobile"><a class="cur" href="./volume.html">Volume</a></li>
       <li class="hideOnMobile"><a href="./currency.html">Currency</a></li>
       <li class="hideOnMobile"><a href="./temperature.html">Temperature</a></li>
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
     </ul>
   </nav>
   
-    <div class="inner box">
-      <i><p id="desc">Switch between units seamlessly with ease.</p></i>
-      <h1>Volume</h1>
-      <div class="box">
-        <div class="container-fluid">
-          <div id="optionfr">
-            <select id="selectfr" name="slfrom" class="form-select slfr" aria-label="Default select example">
-          <option value="0">From</option>
-          <option value="1">Litre (L)</option>
-          <option value="2">Cubic Meter (&#13221;)</option>
-          <option value="3">Cubic centimeter (&#13220;)</option>
-          <option value="4">Milliliter (ml)</option>
-        </select>
-        <img id="conversion" src="../volume.png" alt="">
-        <select id="selectto" name="slto" class="form-select slto" aria-label="Default select example">
-          <option value="0">To</option>
-          <option value="1">Litre (L)</option>
-          <option value="2">Cubic Meter (&#13221;)</option>
-          <option value="3">Cubic centimeter (&#13220;)</option>
-          <option value="4">Milliliter (ml)</option>
-            </select>
-          </div>
+   <div class="bigbox"> <div class="inner box">
+    <i><p id="desc">Switch between units seamlessly with ease.</p></i>
+    <h1>Volume</h1>
+    <div class="box">
+      <div class="container-fluid">
+        <div id="optionfr">
+          <select id="selectfr" name="slfrom" class="form-select slfr" aria-label="Default select example">
+        <option value="0">From</option>
+        <option value="1">Litre (L)</option>
+        <option value="2">Cubic Meter (&#13221;)</option>
+        <option value="3">Cubic centimeter (&#13220;)</option>
+        <option value="4">Milliliter (ml)</option>
+      </select>
+      <img id="conversion" src="../volume.png" alt="">
+      <select id="selectto" name="slto" class="form-select slto" aria-label="Default select example">
+        <option value="0">To</option>
+        <option value="1">Litre (L)</option>
+        <option value="2">Cubic Meter (&#13221;)</option>
+        <option value="3">Cubic centimeter (&#13220;)</option>
+        <option value="4">Milliliter (ml)</option>
+          </select>
         </div>
-        <form>
-          <div class="container-fluid" id="value">
-            <form>
-              <input id="select1fr" name="etfrom" class="form-control" type="number" placeholder="Enter value" value="" aria-label="default input example">
-              <input id="select1to" name="etto" class="form-control" type="number" placeholder="Result" value="" aria-label="default input example">
-            </form>              
-          </div>
-        </form>
       </div>
-       <!-- added button -->
-       <button class="calculate">Calculate</button>
+      <form>
+        <div class="container-fluid" id="value">
+          <form>
+            <input id="select1fr" name="etfrom" class="form-control" type="number" placeholder="Enter value" value="" aria-label="default input example">
+            <input id="select1to" name="etto" class="form-control" type="number" placeholder="Result" value="" aria-label="default input example">
+          </form>              
+        </div>
+      </form>
     </div>
+     <!-- added button -->
+     <button class="calculate">Calculate</button>
+  </div></div>
 
  
   
 
 
-<script src="../script.js"></script>
-
+<script src="../Javascript/navbar.js"></script>
+<script src="../Javascript/volume.js"></script>
 </body>
 </html>

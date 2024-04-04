@@ -6,24 +6,25 @@
   <title>Currency</title>
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="../CSS/Currency.css">
+  <link rel="stylesheet" href="../CSS/navbar.css">
 </head>
 <body>
 
   <nav>
     <ul class="sidebar">
-      <li onclick=hideSidebar()><a href="../HTML/currency.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li onclick=hideSidebar()><a href="./currency.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
       <li><a href="./length.html">Length</a></li>
       <li><a href="./weight.html">Weight</a></li>
       <li><a href="./volume.html">Volume</a></li>
       <li><a class="cur" href="./currency.html">Currency</a></li>
       <li><a href="./temperature.html">Temperature</a></li>
     </ul>
-    <ul>
-      <li><a href="../index.html">Unit Convertor</a></li>
+    <ul class="navbar">
+      <li><a href="../index.html" style="color: black; font-size: 35px; font-weight: 800;">Unit Convertor</a></li>
       <li class="hideOnMobile"><a href="./length.html">Length</a></li>
       <li class="hideOnMobile"><a href="./weight.html">Weight</a></li>
       <li class="hideOnMobile"><a href="./volume.html">Volume</a></li>
-      <li class="hideOnMobile cur"><a href="./currency.html">Currency</a></li>
+      <li class="hideOnMobile"><a class = "cur" href="./currency.html">Currency</a></li>
       <li class="hideOnMobile"><a href="./temperature.html">Temperature</a></li>
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
     </ul>
@@ -63,6 +64,7 @@
 </div>
 
 </form>
-<script src="../script.js"></script>
+<script src="../Javascript/currency.js"></script>
+<script src="../Javascript/navbar.js"></script>
 </body>
 </html>

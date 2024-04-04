@@ -6,7 +6,7 @@
     padding: 0px;
 }
 
-body {
+.bigbox{
     display: flex;
     flex-direction: column;
     background-image: url("https://img.pikbest.com/wp/202346/test-tube-liquid-filled-tubes-in-3d-render_9621425.jpg!sw800");
@@ -101,4 +101,7 @@ img {
     width: 50px;
     border-radius: 50px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.cur{
+    background-color: grey;
 }
