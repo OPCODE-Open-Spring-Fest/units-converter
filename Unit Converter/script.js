@@ -1,10 +1,9 @@
 //Javascript for index.html will be written here
+//Javascript for index.html will be written here
 
-let unit = document.querySelector(".unit");
 let links = document.getElementsByClassName("link");
 let hamLinks = document.getElementsByClassName("hamlink");
 let moon = document.querySelector(".fa-moon");
-let navBar = document.querySelector(".navbar");
 let footer = document.querySelector("footer");
 let mainContent = document.querySelector(".main-content");
 let bars = document.querySelector(".fa-bars");
@@ -58,8 +57,7 @@ moon.addEventListener("click", (e) => {
 
   if (click === 1) {
     click = 0;
-    navBar.style.backgroundColor = "black";
-    unit.style.color = "#ffffff";
+  
     for (let i = 0; i < links.length; i++) {
       links[i].style.color = "#ffffff";
       links[i].style.backgroundColor = "black";
@@ -76,8 +74,8 @@ moon.addEventListener("click", (e) => {
       links[i].style.color = "black";
     }
     hoverInWhiteMode();
-    navBar.style.backgroundColor = "#E5DBCC";
-    unit.style.color = "black";
+   
+    
     moon.style.color = "black";
     bars.style.color = "black";
     mainContent.style.backgroundColor = "#867285";
@@ -144,3 +142,12 @@ bars.addEventListener("click", (e) => {
     click = 1;
   }
 });
+
+function showSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'none'
+}

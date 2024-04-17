@@ -11,17 +11,26 @@
 
 <body>
 
-  <div class="navbar">
-    <span class="unit">unit-convertor</span>
-    <div>
-      <a href="index.html" class="link">Home</a>
-      <a href="HTML/length.html" class="link">Length</a>
-      <a href="HTML/weight.html" class="link">Weight</a>
-      <a href="HTML/volume.html" class="link">Volume</a>
-      <a href="HTML/currency.html" class="link">Currency</a>
-      <a href="HTML/temperature.html" class="link">Temperature</a>
-    </div>
-    <span class="fontawesome">
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+        <li><a href="./HTML/length.html">Length</a></li>
+        <li><a href="./HTML/weight.html">Weight</a></li>
+        <li><a href="./HTML/volume.html">Volume</a></li>
+        <li><a href="./HTML/currency.html">Currency</a></li>
+        <li><a href="./HTML/temperature.html">Temperature</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Unit Convertor</a></li>
+        <li class="hideOnMobile"><a href="./HTML/length.html">Length</a></li>
+        <li class="hideOnMobile"><a href="./HTML/weight.html">Weight</a></li>
+        <li class="hideOnMobile"><a href="./HTML/volume.html">Volume</a></li>
+        <li class="hideOnMobile"><a href="./HTML/currency.html">Currency</a></li>
+        <li class="hideOnMobile"><a href="./HTML/temperature.html">Temperature</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+   <span class="fontawesome">
       <!-- <i class="fa-solid fa-moon fa-2x"></i> -->
       <i class="fa-solid fa-bars fa-2x"></i>
     </span>
@@ -95,7 +104,8 @@
   </footer>
 
   <script src="https://kit.fontawesome.com/df53f4a996.js" crossorigin="anonymous"></script>
-  <!-- <script src="script.js"></script> -->
+  <script src="script.js"></script>
+
 </body>
 
 </html>
