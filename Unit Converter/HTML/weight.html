@@ -32,9 +32,10 @@
 
     <p id="desc">This is a simple unit converter.</p>
         
-        <p>You can also convert from one unit to another unit.</p>
+        <p>You can convert from one unit to another unit.</p>
 
 <div  class="container-fluid ">
+  <h1>Weight</h1>
     <div class="row justify-content-evenly">
 <select id="selectfr" name="slfrom" class="form-select slfr" aria-label="Default select example">
     <option value="0">Select unit you are converting from</option>
@@ -43,6 +44,7 @@
     <option value="3">Milligram (mg)</option>
     <option value="4">Tonne (TON)</option>
   </select>
+  <img id="conversion" src="../weight.png" alt="">
   <select id="selectto" name="slto" class="form-select slto" aria-label="Default select example">
     <option value="0">Select unit you are converting to</option>
     <option value="1">Kilogram (Kg)</option>
@@ -53,7 +55,7 @@
 </div> 
   </select>
   <form>
-  <div class="container-fluid">
+  <div class="container-fluid" id=""value>
     <div class="row justify-content-evenly">
       <form>
       <input id="select1fr" name="etfrom" class="form-control" type="number" placeholder="Enter value to be changed" value="" aria-label="default input example">
@@ -61,6 +63,8 @@
         
     </form>              
     </div>
+    <!--button-->
+    <button class="calculate">Calculate</button>
 </div>
 
   
