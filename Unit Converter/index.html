@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
+
     <nav>
       <ul class="sidebar">
         <li onclick=hideSidebar()><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
@@ -27,11 +30,82 @@
         <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
       </ul>
     </nav>
-  <h2>
-   This is home page 
-  </h2>
+   <span class="fontawesome">
+      <!-- <i class="fa-solid fa-moon fa-2x"></i> -->
+      <i class="fa-solid fa-bars fa-2x"></i>
+    </span>
+  </div>
+  <div class="main-content">
+    <div id="online">
+      <h1>Online conversion of physical units</h1>
+    </div>
 
-  
-<script src="script.js"></script>
+    <div class="msg">
+      <h2>Hi, What do you want to convert !</h2>
+    </div>
+
+      <div class="container">
+        <div id="length" class="inside">
+          <div class="layer"></div>
+          <div class="converterInfo">
+            <h3><a href="HTML/length.html">Length Converter</a></h3>
+            <p>A length converter converts measurements from one unit of length to another. It allows you to easily convert measurements such as inches to centimeters, feet to meters, or miles to kilometers, among others. It simplifies calculations and helps in comparing measurements across different units.</p>
+          </div>
+        </div>
+
+        <div id="weight" class="inside">
+          <div class="layer"></div>
+          <div class="converterInfo">
+            <h3><a href="HTML/weight.html">Weight Converter</a></h3>
+            <p>A weight converter is a tool used to convert measurements of weight or mass from one unit to another. It simplifies tasks such as converting kilograms to pounds, grams to ounces, or metric tons to short tons.</p>
+          </div>
+        </div>
+
+        <div id="volume" class="inside">
+          <div class="layer"></div>
+          <div class="converterInfo">
+            <h3><a href="HTML/volume.html">Volume Converter</a></h3>
+            <p>A litre converter is a tool designed to convert volume measurements between litres and other units such as millilitres, cubic meters, and cubic centimeters. It simplifies tasks by allowing users to input a volume in litres and instantly obtain the equivalent measurement in their desired unit, or vice versa.</p>
+          </div>
+        </div>
+
+        <div id="currency" class="inside">
+          <div class="layer"></div>
+          <div class="converterInfo">
+            <h3><a href="HTML/currency.html">Currency Converter</a></h3>
+            <p>
+              A currency converter is a tool or application used to convert the value of one currency into another currency based on the current exchange rates. It allows users to quickly assess the equivalent value of a certain amount of money in different currencies.</p>
+          </div>
+        </div>
+
+        <div id="temp" class="inside">
+          <div class="layer"></div>
+          <div class="converterInfo">
+            <h3><a href="HTML/temperature.html">Temperature Converter</a></h3>
+            <p>
+              A temperature converter is a tool used to convert temperatures between different units of measurement, such as Celsius, Fahrenheit, and Kelvin. It allows users to easily convert temperatures from one scale to another, facilitating tasks like converting Celsius to Fahrenheit or vice versa.</p>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+  <div class="preFooter">
+    <p>OP Code</p>
+    <p>HTML</p>
+    <p>JavaScript</p>
+    <p>CSS</p>
+  </div>
+
+  <footer>
+    <h1>Do so much more</h1>
+    <p>Copyright
+      IIIT © Bhagalpur 2024</p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/df53f4a996.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
 </body>
+
 </html>
